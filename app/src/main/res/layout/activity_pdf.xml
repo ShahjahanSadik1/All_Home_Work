@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pdf_activity"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+    <LinearLayout
+        android:id="@+id/home_layout_home"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="কত থেকে কত সংখ্যা  দেখতে চান?"
+                android:textSize="20dp"
+                android:paddingTop="20dp"/>
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Small Namber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Big Namber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                    <TextView
+                        android:id="@+id/button"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_strily"
+                        android:layout_gravity="center"
+                        android:text="Button"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/delete"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/delete_icon"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="7dp"
+                                />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+
+
+        <!--jor -->
+        <!--jor -->
+        <!--jor -->
+        <!--jor -->
+        <LinearLayout
+            android:id="@+id/jor_layout_jor"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="কত থেকে কত বিজোড় সংখ্যা  দেখতে চান?"
+                android:textSize="20dp"
+                android:paddingTop="20dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/jor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Smoll Namber"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_jor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Big Namber"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_j"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/button_2"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_gravity="center"
+                            android:text="Button"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/delete_j"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/delete_icon" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvDisplay_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </ScrollView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <!--jor -->
+        <!--jor -->
+        <!--jor -->
+        <!--jor -->
+
+
+
+        <!--bijor -->
+        <!--bijor -->
+        <!--bijor -->
+        <!--bijor -->
+        <LinearLayout
+            android:id="@+id/bijor_layout_bijor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="কত থেকে কত জোড় সংখ্যা দেখতে চান?"
+                android:textSize="20dp"
+                android:paddingTop="20dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/bijor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:hint="Smoll Namber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_bijor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:hint="Big Namber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_bij"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/button_bijor"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_strily"
+                            android:gravity="center"
+                            android:text="Button"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/button_strily">
+
+                            <ImageView
+                                android:id="@+id/delete_b"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/delete_icon" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDisplay_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--bijor -->
+        <!--bijor -->
+        <!--bijor -->
+        <!--bijor -->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_home_1"
+                    android:padding="9dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jor"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_bejor_1"
+                    android:padding="9dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bijor"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/jor_t"
+                    android:padding="9dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nested_loop">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <LinearLayout
+            android:id="@+id/home_layout_home"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="কত থেকে কত পযন্ত যোগফল দেখতে চান?"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"/>
+
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="প্রথম সংখ্যা"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="দ্বিতীয় সংখ্যা"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_namber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/button_namber"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_gravity="center"
+                            android:text="Button"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/delete_namber"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/delete_icon" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Display"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"/>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </ScrollView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+
+
+
+
+        <!--good -->
+        <!--good -->
+        <!--Home -->
+        <!--Home -->
+        <LinearLayout
+            android:id="@+id/home_layout_one"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mylayou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="কত থেকে কত পযন্ত prime namber চান?"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"/>
+
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="প্রথম সংখ্যা"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_prime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/button_prime"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_gravity="center"
+                            android:text="Button"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/delete_prime"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/delete_icon" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Display_prime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"/>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </ScrollView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+
+
+
+
+
+        <!--good good good good good good  -->
+        <!--good -->
+        <!--Home -->
+        <!--Home -->
+        <LinearLayout
+            android:id="@+id/home_layout_two"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mylaytwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="কয়টি মৌলিক সংখ্যা বের করতে চান"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"/>
+
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="প্রথম সংখ্যা"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_prime_koto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="প্রথম সংখ্যা"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_prime_two_koto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/button_prime_koto"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_gravity="center"
+                            android:text="Button"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_strily"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:id="@+id/delete_prime_koto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:src="@drawable/delete_icon" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Display_prime_koto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"/>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </ScrollView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+        <!--Home -->
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_home_1"
+                    android:layout_margin="3dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+                <ImageView
+                    android:id="@+id/home_two"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_bejor_1"
+                    android:layout_margin="3dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/komla"
+                >
+
+                <ImageView
+                    android:id="@+id/home_ses"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/jor_t"
+                    android:layout_margin="3dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
